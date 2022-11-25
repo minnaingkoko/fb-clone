@@ -2,7 +2,7 @@ import { env } from '$env/dynamic/private';
 import { createTransport } from 'nodemailer';
 
 async function sendEmail(receiver: string, Name: string, confirmCode: number) {
-	let transporter = createTransport({
+	const transporter = createTransport({
 		service: 'gmail',
 		auth: {
 			user: env.SECRET_EMAIL_USERNAME,
@@ -10,7 +10,7 @@ async function sendEmail(receiver: string, Name: string, confirmCode: number) {
 		}
 	});
 
-	let info = await transporter.sendMail({
+	const info = await transporter.sendMail({
 		from: 'Facebook-Clone<miracledev.freelancer@gmail.com>',
 		to: receiver,
 		subject: `FB-${confirmCode} is your Facebook-Clone confirmation code`,

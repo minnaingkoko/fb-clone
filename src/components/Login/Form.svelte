@@ -20,8 +20,8 @@
 		});
 		const data = await res.json();
 		if (data.body.user) {
-			user.update((value) => (value = data.body.user));
-			newsfeed.update((value) => (value = true));
+			user.set(data.body.user);
+			newsfeed.set(true);
 			login.set({
 				emOph: '',
 				Password: ''

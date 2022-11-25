@@ -2,7 +2,7 @@
 	export let link: string,
 		IconUrl: string,
 		pos: string,
-        BtnHeading: string,
+		BtnHeading: string,
 		BtnText: string,
 		mt: string,
 		ml: string,
@@ -10,21 +10,22 @@
 		mb: string;
 </script>
 
-<a href={link}
+<a
+	href={link}
 	class="custom-button"
 	style="margin-top: {mt}px; margin-left: {ml}px; margin-right: {mr}px; margin-bottom: {mb}px;"
 >
 	<div class="button-icon">
-		<div class="button-img" style="background-image: url({IconUrl}); background-position: {pos}"></div>
+		<div class="button-img" style="background-image: url({IconUrl}); background-position: {pos}" />
 	</div>
-    <div class="text">
-        <div class="button-heading">
-            {BtnHeading}
-        </div>
-        <div class="button-text">
+	<div class="text">
+		<div class="button-heading">
+			{BtnHeading}
+		</div>
+		<div class="button-text">
 			{@html BtnText}
-        </div>
-    </div>
+		</div>
+	</div>
 </a>
 
 <style>
@@ -43,7 +44,7 @@
 	.text {
 		@apply ml-[12px] flex flex-col;
 	}
-	.button-heading{
+	.button-heading {
 		@apply text-[15px] font-semibold leading-[19px];
 	}
 	.button-text {

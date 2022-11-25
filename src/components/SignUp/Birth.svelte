@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
 	import { register } from '../../stores/MainStores';
 	let date = new Date();
 	let cd = date.getDate();

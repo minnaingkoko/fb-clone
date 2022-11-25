@@ -4,7 +4,7 @@
 	let slide = false;
 	const toggleSlide = () => {
 		slide = !slide;
-	}
+	};
 </script>
 
 <div class="left-content">
@@ -30,34 +30,294 @@
 		br="0"
 		slide={true}
 	/>
-	<Button link="#" IconUrl="/images/logo.webp" BtnText="Welcome" mt="0" ml="8" mr="0" mb="0" br="0" slide={true} />
-	<Button link="/groups" IconUrl="/images/groups.webp" BtnText="Groups" mt="0" ml="8" mr="0" mb="0" br="0" slide={true} />
-	<Button link="#" IconUrl="/images/market.webp" BtnText="Marketplace" mt="0" ml="8" mr="0" mb="0" br="0" slide={true} />
-	<Button link="/watch" IconUrl="/images/watch.webp" BtnText="Watch" mt="0" ml="8" mr="0" mb="0" br="0" slide={true} />
-	<Button link="#" IconUrl="/images/memories.webp" BtnText="Memories" mt="0" ml="8" mr="0" mb="0" br="0" slide={true} />
-	<Button link="#" IconUrl="/images/saved.webp" BtnText="Saved" mt="0" ml="8" mr="0" mb="0" br="0" slide={true} />
-	<Button link="#" IconUrl="/images/pages.webp" BtnText="Pages" mt="0" ml="8" mr="0" mb="0" br="0" slide={true} />
-	<Button link="#" IconUrl="/images/event.webp" BtnText="Events" mt="0" ml="8" mr="0" mb="0" br="0" slide={true} />
-	<Button link="#" IconUrl="/images/recent.webp" BtnText="Most recent" mt="0" ml="8" mr="0" mb="0" br="0" slide={true} />
-	<Button link="#" IconUrl="/images/favourite.webp" BtnText="Favourites" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
+	<Button
+		link="#"
+		IconUrl="/images/logo.webp"
+		BtnText="Welcome"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		slide={true}
+	/>
+	<Button
+		link="/groups"
+		IconUrl="/images/groups.webp"
+		BtnText="Groups"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		slide={true}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/market.webp"
+		BtnText="Marketplace"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		slide={true}
+	/>
+	<Button
+		link="/watch"
+		IconUrl="/images/watch.webp"
+		BtnText="Watch"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		slide={true}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/memories.webp"
+		BtnText="Memories"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		slide={true}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/saved.webp"
+		BtnText="Saved"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		slide={true}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/pages.webp"
+		BtnText="Pages"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		slide={true}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/event.webp"
+		BtnText="Events"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		slide={true}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/recent.webp"
+		BtnText="Most recent"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		slide={true}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/favourite.webp"
+		BtnText="Favourites"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
 	<!-- break -->
-	<Button link="#" IconUrl="/images/ad_centre.webp" BtnText="Ad Centre" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
-	<Button link="#" IconUrl="/images/ads_manager.webp" BtnText="Ads Manager" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
-	<Button link="#" IconUrl="/images/blood.webp" BtnText="Blood Donations" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
-	<Button link="#" IconUrl="/images/climate.webp" BtnText="Climate Science Centre" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
-	<Button link="#" IconUrl="/images/covid.webp" BtnText="Covid-19 Information Centre" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
-	<Button link="#" IconUrl="/images/crisis.webp" BtnText="Crisis Response" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
-	<Button link="#" IconUrl="/images/digital.webp" BtnText="Digital Collectibles" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
-	<Button link="#" IconUrl="/images/emotional.webp" BtnText="Emotional Health" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
-	<Button link="#" IconUrl="/images/pay.webp" BtnText="Facebook Pay" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
-	<Button link="#" IconUrl="/images/fundraiser.webp" BtnText="Fundraisers" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
-	<Button link="#" IconUrl="/images/gaming.webp" BtnText="Gaming video" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
-	<Button link="#" IconUrl="/images/live.webp" BtnText="Live video" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
-	<Button link="#" IconUrl="/images/messenger.webp" BtnText="Messenger" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
-	<Button link="#" IconUrl="/images/messenger_kid.webp" BtnText="Messenger Kids" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
-	<Button link="#" IconUrl="/images/play.webp" BtnText="Play games" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
-	<Button link="#" IconUrl="/images/recent_ad.webp" BtnText="Recent ad activity" mt="0" ml="8" mr="0" mb="0" br="0" slide={slide} />
-	
+	<Button
+		link="#"
+		IconUrl="/images/ad_centre.webp"
+		BtnText="Ad Centre"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/ads_manager.webp"
+		BtnText="Ads Manager"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/blood.webp"
+		BtnText="Blood Donations"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/climate.webp"
+		BtnText="Climate Science Centre"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/covid.webp"
+		BtnText="Covid-19 Information Centre"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/crisis.webp"
+		BtnText="Crisis Response"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/digital.webp"
+		BtnText="Digital Collectibles"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/emotional.webp"
+		BtnText="Emotional Health"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/pay.webp"
+		BtnText="Facebook Pay"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/fundraiser.webp"
+		BtnText="Fundraisers"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/gaming.webp"
+		BtnText="Gaming video"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/live.webp"
+		BtnText="Live video"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/messenger.webp"
+		BtnText="Messenger"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/messenger_kid.webp"
+		BtnText="Messenger Kids"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/play.webp"
+		BtnText="Play games"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
+	<Button
+		link="#"
+		IconUrl="/images/recent_ad.webp"
+		BtnText="Recent ad activity"
+		mt="0"
+		ml="8"
+		mr="0"
+		mb="0"
+		br="0"
+		{slide}
+	/>
+
 	<button on:click={toggleSlide} class="custom-button">
 		{#if slide}
 			<div class="profile">

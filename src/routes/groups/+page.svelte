@@ -1,5 +1,5 @@
 <script>
-    import Groups from "../../components/Groups/Groups.svelte";
+	import Groups from '../../components/Groups/Groups.svelte';
 </script>
 
 <Groups />

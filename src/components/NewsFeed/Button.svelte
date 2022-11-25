@@ -10,9 +10,12 @@
 		slide: boolean;
 </script>
 
-<a href={link}
+<a
+	href={link}
 	class="custom-button"
-	style="margin-top: {mt}px; margin-left: {ml}px; margin-right: {mr}px; margin-bottom: {mb}px; {slide ? 'display: flex' : 'display: none'}"
+	style="margin-top: {mt}px; margin-left: {ml}px; margin-right: {mr}px; margin-bottom: {mb}px; {slide
+		? 'display: flex'
+		: 'display: none'}"
 >
 	<div class="button-icon">
 		<img class="button-img" src={IconUrl} style="border-radius: {br}%;" alt="icon" />

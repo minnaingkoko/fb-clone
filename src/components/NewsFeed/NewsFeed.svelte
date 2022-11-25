@@ -1,13 +1,14 @@
 <script>
-	import Nav from './Nav.svelte';
+	import Nav from '../shared/Nav.svelte'
 	import LeftContent from './LeftContent.svelte';
 	import MidContent from './MidContent.svelte';
 	import RightContent from './RightContent.svelte';
-	import Create from './Create.svelte';
-	import { create, chats, notifications } from '../../stores/MainStores';
-	import Chats from './Chats.svelte';
-	import Notifications from './Notifications.svelte';
-	import Menu from './Menu.svelte';
+	import Create from '../shared/Create.svelte';
+	import { create, chats, notifications, currentRoute } from '../../stores/MainStores';
+	import Chats from '../shared/Chats.svelte';
+	import Notifications from '../shared/Notifications.svelte';
+	import Menu from '../shared/Menu.svelte';
+	currentRoute.set('home');
 </script>
 
 <div>

@@ -1,5 +1,5 @@
 <script>
-    import Friends from "../../components/Friends/Friends.svelte";
+	import Friends from '../../components/Friends/Friends.svelte';
 </script>
 
 <Friends />

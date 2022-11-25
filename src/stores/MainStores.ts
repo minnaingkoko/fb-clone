@@ -63,3 +63,5 @@ export const help = writable(false);
 export const display = writable(false);
 
 export const keyboard = writable(false);
+
+export const currentRoute = writable('');

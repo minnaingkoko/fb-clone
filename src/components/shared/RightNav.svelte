@@ -1,42 +1,71 @@
 <script>
-	import { create, chats, notifications, menu, setting, help, display, keyboard } from '../../stores/MainStores';
+	import {
+		newsfeed,
+		user,
+		create,
+		chats,
+		notifications,
+		menu,
+		setting,
+		help,
+		display
+	} from '../../stores/MainStores';
+	import { redirect } from '@sveltejs/kit';
+	const logout = async () => {
+		const url = 'http://localhost:5173/api/logout';
+		const res = await fetch(url);
+		const data = await res.json();
+		if (data.status === 302) {
+			newsfeed.update((value) => (value = value = false));
+			redirect(302, '/');
+			user.set({
+				FirstName: '',
+				SurName: '',
+				emOph: '',
+				Bday: 0,
+				Bmonth: '',
+				Byear: 0,
+				Gender: ''
+			});
+		}
+	};
 
 	const createBtn = () => {
 		create.update((value) => !value);
-		chats.update((value) => value = false);
-		notifications.update((value) => value = false);
-		menu.update((value) => value = false);
-		setting.update((value) => value = false);
-        help.update((value) => value = false);
-        display.update((value) => value = false);
-	}
+		chats.set(false);
+		notifications.set(false);
+		menu.set(false);
+		setting.set(false);
+		help.set(false);
+		display.set(false);
+	};
 	const chatsBtn = () => {
 		chats.update((value) => !value);
-		create.update((value) => value = false);
-		notifications.update((value) => value = false);
-		menu.update((value) => value = false);
-		setting.update((value) => value = false);
-        help.update((value) => value = false);
-        display.update((value) => value = false);
-	}
+		create.set(false);
+		notifications.set(false);
+		menu.set(false);
+		setting.set(false);
+		help.set(false);
+		display.set(false);
+	};
 	const notiBtn = () => {
 		notifications.update((value) => !value);
-		create.update((value) => value = false);
-		chats.update((value) => value = false);
-		menu.update((value) => value = false);
-		setting.update((value) => value = false);
-        help.update((value) => value = false);
-        display.update((value) => value = false);
-	}
+		create.set(false);
+		chats.set(false);
+		menu.set(false);
+		setting.set(false);
+		help.set(false);
+		display.set(false);
+	};
 	const menuBtn = () => {
 		menu.update((value) => !value);
-		setting.update((value) => value = false);
-        help.update((value) => value = false);
-        display.update((value) => value = false);
-		create.update((value) => value = false);
-		chats.update((value) => value = false);
-		notifications.update((value) => value = false);
-	}
+		setting.set(false);
+		help.set(false);
+		display.set(false);
+		create.set(false);
+		chats.set(false);
+		notifications.set(false);
+	};
 </script>
 
 <div class="right-nav">

@@ -7,7 +7,7 @@
 	<div class="info">
 		<div class="white-circle">
 			<div class="circle">
-				<img class="profile-circle" src="/images/profile-main.webp" alt="profile-circle"/>
+				<img class="profile-circle" src="/images/profile-main.webp" alt="profile-circle" />
 			</div>
 		</div>
 		<div class="hide" />
@@ -47,7 +47,7 @@
 		@apply h-[168px] w-[168px] cursor-pointer rounded-[50%];
 	}
 	.profile-circle {
-		@apply h-[168px] w-[168px] rounded-[50%] object-cover; 
+		@apply h-[168px] w-[168px] rounded-[50%] object-cover;
 	}
 	.hide {
 		@apply relative h-[178px] w-[178px];

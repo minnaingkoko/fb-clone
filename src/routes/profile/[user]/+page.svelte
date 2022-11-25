@@ -1,3 +1,1 @@
-<div>
-    Dynamic profile route
-</div>
+<div>Dynamic profile route</div>

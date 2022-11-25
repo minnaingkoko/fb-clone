@@ -1,18 +1,21 @@
 <script>
+	import { currentRoute } from '../../stores/MainStores';
 	import RightNav from './RightNav.svelte';
 </script>
 
 <nav class="nav-bar">
 	<div class="mid-nav">
-		<a href="/" class="home-route">
-			<img class="home-icon" src="/images/home.svg" alt="home" />
-			<div class="blue-line" />
+		<a href="/" class={$currentRoute === 'home' ? "current-route" : 'other-route'}>
+			<img class="nav-icon" src={$currentRoute === 'home' ? "/images/home.svg" : "/images/home-alt.svg"} alt="home" />
+			<div class={$currentRoute === 'home' ? "blue-line" : 'no-line'} />
 		</a>
-		<a href="/friends" class="other-route">
-			<img class="other-icon" src="/images/friend-alt.svg" alt="friend" />
+		<a href="/friends" class={$currentRoute === 'friends' ? "current-route" : 'other-route'}>
+			<img class="nav-icon" src={$currentRoute === 'friends' ? "/images/friend.svg" : "/images/friend-alt.svg"} alt="friend" />
+			<div class={$currentRoute === 'friends' ? "blue-line" : 'no-line'} />
 		</a>
-		<a href="/groups" class="other-route">
-			<img class="other-icon" src="/images/group-alt.svg" alt="group" />
+		<a href="/groups" class={$currentRoute === 'groups' ? "current-route" : 'other-route'}>
+			<img class="nav-icon" src={$currentRoute === 'groups' ? "/images/group.svg" : "/images/group-alt.svg"} alt="group" />
+			<div class={$currentRoute === 'groups' ? "blue-line" : 'no-line'} />
 		</a>
 	</div>
 	<div class="left-nav">
@@ -34,23 +37,23 @@
 	.mid-nav {
 		@apply absolute left-[50%] flex translate-x-[-50%] flex-row items-center gap-[8px];
 	}
-	.home-route {
+	.current-route {
 		@apply relative flex h-[56px] w-[112px] cursor-pointer items-center justify-center rounded-lg duration-300;
 	}
-	.home-icon {
+	.nav-icon {
 		@apply h-[28px] w-[28px] object-cover;
 	}
 	.blue-line {
 		@apply absolute bottom-[0px] h-[4px] w-[112px] bg-[#1b74e4];
+	}
+	.no-line {
+		@apply hidden;
 	}
 	.other-route {
 		@apply flex h-[48px] w-[112px] cursor-pointer items-center justify-center rounded-lg duration-300;
 	}
 	.other-route:hover {
 		@apply bg-[#f0f2f5];
-	}
-	.other-icon {
-		@apply h-[28px] w-[28px] object-cover;
 	}
 	.left-nav {
 		@apply flex flex-row;

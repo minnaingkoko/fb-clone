@@ -44,7 +44,8 @@
 	.info-text {
 		@apply text-[15px] font-semibold;
 	}
-	.photo-section, .friend-section {
+	.photo-section,
+	.friend-section {
 		@apply w-[100%] rounded-lg bg-[#ffffff] pt-[20px] pb-[20px] shadow-[0_2px_4px_0_rgba(0,0,0,0.1)];
 	}
 	.align {

@@ -18,7 +18,7 @@
 	<div class="break-line" />
 	<div class="create-story">
 		<div class="next">
-			<img class="next-icon" src="/images/next.svg" alt="">
+			<img class="next-icon" src="/images/next.svg" alt="" />
 		</div>
 		<div class="story-wrapper">
 			<img class="story-icon" src="/images/story.webp" alt="" />

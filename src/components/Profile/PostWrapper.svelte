@@ -6,8 +6,8 @@
 <div class="post-wrapper">
 	<div class="post-wrap">
 		<div class="create-post">
-			<img class="profile-img" src="/images/profile.webp" alt=""/>
-			<input class="create-btn" type="text" placeholder="What’s on your mind?"/>
+			<img class="profile-img" src="/images/profile.webp" alt="" />
+			<input class="create-btn" type="text" placeholder="What’s on your mind?" />
 		</div>
 		<div class="break-line" />
 		<div class="extra-btns">
@@ -20,7 +20,7 @@
 				<div class="extra-text">Photo/video</div>
 			</div>
 			<div class="extra-btn">
-				<div class="event-icon"/>
+				<div class="event-icon" />
 				<div class="extra-text">Life Event</div>
 			</div>
 		</div>

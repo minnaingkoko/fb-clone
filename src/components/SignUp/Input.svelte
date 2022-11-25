@@ -3,14 +3,38 @@
 </script>
 
 <div class="input-sec">
-	<input class="name-input" type="text" name="first-name" placeholder="First Name" bind:value={$register.FirstName}/>
-	<input class="name-input" type="text" name="surname" placeholder="SurName" bind:value={$register.SurName}/>
+	<input
+		class="name-input"
+		type="text"
+		name="first-name"
+		placeholder="First Name"
+		bind:value={$register.FirstName}
+	/>
+	<input
+		class="name-input"
+		type="text"
+		name="surname"
+		placeholder="SurName"
+		bind:value={$register.SurName}
+	/>
 </div>
 <div class="other-input-sec">
-	<input class="other-input" type="text" name= "emOph" placeholder="Mobile number or email address" bind:value={$register.emOph}/>
+	<input
+		class="other-input"
+		type="text"
+		name="emOph"
+		placeholder="Mobile number or email address"
+		bind:value={$register.emOph}
+	/>
 </div>
 <div class="other-input-sec">
-	<input class="other-input" type="password" name="password" placeholder="New Password" bind:value={$register.Password}/>
+	<input
+		class="other-input"
+		type="password"
+		name="password"
+		placeholder="New Password"
+		bind:value={$register.Password}
+	/>
 </div>
 
 <style>

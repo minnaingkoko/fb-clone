@@ -3,11 +3,11 @@
 		<div class="post-intro">Posts</div>
 		<div class="post-wrap">
 			<div class="some-btn">
-				<div class="filter-icon"/>
+				<div class="filter-icon" />
 				<div>Filters</div>
 			</div>
 			<div class="some-btn">
-				<div class="manage-icon"/>
+				<div class="manage-icon" />
 				<div class="">Manage Posts</div>
 			</div>
 		</div>
@@ -15,12 +15,12 @@
 	<div class="break-line" />
 	<div class="view">
 		<div class="list-view">
-			<div class="list-icon"/>
+			<div class="list-icon" />
 			<div class="list-text">List view</div>
 			<div class="blue-line" />
 		</div>
 		<div class="grid-view">
-			<div class="grid-icon"/>
+			<div class="grid-icon" />
 			<div class="grid-text">Grid view</div>
 		</div>
 	</div>
@@ -58,7 +58,8 @@
 		@apply relative flex h-[40px] w-[234px] cursor-pointer flex-row items-center justify-center gap-[4px];
 	}
 	.list-icon {
-		filter: invert(39%) sepia(57%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(147.75%) hue-rotate(202deg) brightness(97%) contrast(96%);
+		filter: invert(39%) sepia(57%) saturate(200%) saturate(200%) saturate(200%) saturate(200%)
+			saturate(200%) saturate(147.75%) hue-rotate(202deg) brightness(97%) contrast(96%);
 		@apply h-[16px] w-[16px] bg-[url('/images/grid.webp')] bg-auto bg-[left_-1395px] bg-no-repeat;
 	}
 	.list-text {

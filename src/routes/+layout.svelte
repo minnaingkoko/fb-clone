@@ -19,13 +19,12 @@
 		if (data.body.user) {
 			user.update((value) => (value = data.body.user));
 		}
-	}
+	};
 
-	if($page.data.user){
+	if ($page.data.user) {
 		getUser();
 		newsfeed.update((value) => (value = value = true));
-	}
-	else{
+	} else {
 		newsfeed.update((value) => (value = value = false));
 		user.set({
 			FirstName: '',

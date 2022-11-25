@@ -35,7 +35,7 @@
 				Bmonth: $register.Bmonth,
 				Byear: $register.Byear,
 				Gender: $register.Gender,
-				confirm: $confirm,
+				confirm: $confirm
 			}
 		};
 		const res = await fetch(url, {
@@ -60,9 +60,8 @@
 			// 	Byear: new Date().getFullYear(),
 			// 	Gender: ''
 			// });
-			goto("/confirmEmail")
+			goto('/confirmEmail');
 		}
-		
 	};
 </script>
 
@@ -80,7 +79,7 @@
 	<Gender />
 	<Terms />
 	<div class="signup-btn">
-		<input class="signup-input" type="submit" value="Sign Up"/>
+		<input class="signup-input" type="submit" value="Sign Up" />
 	</div>
 </form>
 

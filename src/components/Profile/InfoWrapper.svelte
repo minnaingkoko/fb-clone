@@ -10,7 +10,7 @@
 			// scroll down
 			let left = document.getElementById('left');
 			let test = document.getElementById('test');
-			if( left !== null && test !== null){
+			if (left !== null && test !== null) {
 				let result = winTop + 32;
 				let value = result - left.offsetHeight;
 				if (value < 0) {
@@ -27,7 +27,7 @@
 			//scroll up
 			let left = document.getElementById('left');
 			let test = document.getElementById('test');
-			if(left !== null && test !== null){
+			if (left !== null && test !== null) {
 				con = true;
 				let result = winTop + 32;
 				let value = result - left.offsetHeight;
@@ -37,7 +37,7 @@
 					glo1 = value;
 				}
 				left.style.bottom = '-1043px';
-				left.style.top = 'initial';	
+				left.style.top = 'initial';
 			}
 		}
 		Top = winTop <= 0 ? 0 : winTop;

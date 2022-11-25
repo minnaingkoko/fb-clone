@@ -1,18 +1,19 @@
 <script>
-	import Nav from './Nav.svelte';
+	import Nav from '../shared/Nav.svelte';
 	import ProfileInfo from './ProfileInfo.svelte';
 	import InfoWrapper from './InfoWrapper.svelte';
 	import PostWrapper from './PostWrapper.svelte';
-	import { create, chats, notifications } from '../../stores/MainStores';
-	import Chats from './Chats.svelte';
-	import Notifications from './Notifications.svelte';
-	import Menu from './Menu.svelte';
-	import Create from './Create.svelte';
+	import { create, chats, notifications, currentRoute } from '../../stores/MainStores';
+	import Chats from '../shared/Chats.svelte';
+	import Notifications from '../shared/Notifications.svelte';
+	import Menu from '../shared/Menu.svelte';
+	import Create from '../shared/Create.svelte';
+	currentRoute.set('profile');
 </script>
 
 <div>
 	<div class="profile">
-		<div class="util-img"/>
+		<div class="util-img" />
 	</div>
 	<Nav />
 	{#if $create}
@@ -32,7 +33,7 @@
 			<div class="background-cover">
 				<div class="background" />
 				<div class="edit-cover">
-					<div class="edit-icon"/>
+					<div class="edit-icon" />
 					<div class="edit-text">Edit cover photo</div>
 				</div>
 			</div>

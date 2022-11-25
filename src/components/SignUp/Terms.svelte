@@ -5,7 +5,8 @@
 
 <div class="terms">
 	By clicking Sign Up, you agree to our
-	<div class="terms-text">Terms, Data Policy</div>and
+	<div class="terms-text">Terms, Data Policy</div>
+	and
 	<div class="terms-text">Cookie Policy</div>
 	.<br />You may receive SMS notifications from us and can opt out at any time.
 </div>
